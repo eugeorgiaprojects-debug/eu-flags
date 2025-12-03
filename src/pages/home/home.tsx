@@ -1,47 +1,13 @@
 import {useState, useRef} from 'react';
 import './home.css';
-
-type Track = {
-    id: string;
-    name: string;
-    url: string;
-};
-
-const musicFiles = [
-    'Austria',
-    'Belgium',
-    'Bulgaria',
-    'Croatia',
-    'Cyprus',
-    'Czechia',
-    'Denmark',
-    'Estonia',
-    'European-union',
-    'Finland',
-    'France',
-    'Germany',
-    'Greece',
-    'Hungary',
-    'Ireland',
-    'Italy',
-    'Latvia',
-    'Lithuania',
-    'Luxembourg',
-    'Malta',
-    'Netherlands',
-    'Poland',
-    'Portugal',
-    'Romania',
-    'Slovakia',
-    'Slovenia',
-    'Spain',
-    'Sweden',
-];
+import {musicFiles} from "./home.constants";
+import type {Track} from "./home.type";
 
 const tracks: Track[] = musicFiles.map((fileName, index) => ({
     id: String(index + 1) + new Date() + Math.random(),
-    name: fileName,
-    url: `/assets/music/${fileName}.mp3`
+    name: fileName.fileName,
+    url: `/assets/music/${fileName.fileName}.mp3`,
+    image: `/assets/images/flags/${fileName.image}.png`
 }));
 
 export function Home() {
@@ -91,7 +57,10 @@ export function Home() {
                         onClick={() => handlePlayTrack(track.id, track.url)}
                         className={`music-button ${currentTrack === track.id ? 'active' : ''}`}
                     >
-                        {currentTrack === track.id ? '⏸ Stop' : '▶ Play'} {track.name}
+                        <img src={track.image} alt={track.name}/>
+                        <span>
+                        {track?.name?.replace('-', ' ')}
+                        </span>
                     </button>
                 ))}
             </div>

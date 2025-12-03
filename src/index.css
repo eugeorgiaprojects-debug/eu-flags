@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('/assets/fonts/TBCContractica-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     min-height: 100vh;
     background-image: url('/assets/images/eu.jpg');
@@ -9,4 +16,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+span {
+    font-family: 'MyFont', sans-serif;
 }
