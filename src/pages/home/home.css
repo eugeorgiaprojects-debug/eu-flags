@@ -1,0 +1,39 @@
+.buttons-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttons-container button {
+    width: 250px;
+}
+
+.music-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: 2px solid #007bff;
+    background-color: rgb(255, 255, 255, 0.8);
+    color: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.music-button:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.music-button.active {
+    background-color: #28a745;
+    color: white;
+    border-color: #28a745;
+}
+
+.music-button.active:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
