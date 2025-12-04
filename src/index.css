@@ -19,10 +19,12 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 @media (max-width: 750px) {
     body {
+        height: 95vh;
         background-image: url('/assets/images/eu-mobile.jpg');
     }
 }
