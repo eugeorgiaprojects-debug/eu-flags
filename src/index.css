@@ -24,7 +24,6 @@ body {
 
 @media (max-width: 750px) {
     body {
-        height: 95vh;
         background-image: url('/assets/images/eu-mobile.jpg');
     }
 }
