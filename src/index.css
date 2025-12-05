@@ -16,27 +16,6 @@ span {
 }
 
 body {
-    /*background-size: cover;*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
     height: 100vh;
-    background-color: #182b7f;
+    background-color: #234093;
 }
-
-/*@media (max-width: 750px) {*/
-/*    body {*/
-/*        background-image: url('/assets/images/eu-mobile.jpg');*/
-/*    }*/
-/*}*/
-
-/*@media (min-width: 751px) and (max-width: 1050px) {*/
-/*    body {*/
-/*        background-image: url('/assets/images/eu-tablet.jpg');*/
-/*    }*/
-/*}*/
-
-/*@media (min-width: 1051px) {*/
-/*    body {*/
-/*        background-image: url('/assets/images/eu-desktop.jpg');*/
-/*    }*/
-/*}*/
